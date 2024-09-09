@@ -17,12 +17,11 @@ const App = () => {
       <AuthProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<SignUp />} />
-            <Route path="/" element={<SignUp />} />
-            <Route path="/home" element={<PrivateRoute element={<Home />} />} />
-            <Route path="/home/image" element={<PrivateRoute element={<ImageSearch />} />} />
-            <Route path="/home/video" element={<PrivateRoute element={<VideoSearch />} />} />
-            <Route path="/home/text" element={<PrivateRoute element={<TextSearch />} />} />
+            
+            <Route path="/"  element={<Home />}  />
+            <Route path="/home/image"  element={<ImageSearch />}  />
+            <Route path="/home/video"  element={<VideoSearch  />} />
+            <Route path="/home/text"  element={<TextSearch />} />
           </Routes>
         </Router>
       </AuthProvider>
